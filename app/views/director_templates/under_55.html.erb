@@ -1,0 +1,14 @@
+<h1>Under 55</h1>
+
+<h2> <%= @under55.count %> directors in the database are under 55 years old. </h2>
+
+
+<ul>
+
+<% @under55.each do |director| %>
+  <li>
+    <%= director.name %>
+  </li>
+<% end %>
+
+</ul>

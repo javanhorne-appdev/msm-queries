@@ -1,4 +1,13 @@
 <h1>Films from before 2000</h1>
 
+<h2> <%= @movies_pre2k.count %> movies in the database were from before 2000.</h2>
+<ul>
 
+ <% @movies_pre2k.each do |film| %>
+    <li>
+    <%=  film.title %>
+    </li>
+ <% end %>
+
+</ul>
 

@@ -1,0 +1,12 @@
+<h1>Morgan Freeman's Film Appearances </h1>
+
+<h2>We have <%= @morgan_films.count %> film(s) in which Morgan Freeman appeared in our database.</h2>
+
+<p> Specifically:</p>
+<ul>
+ <% @morgan_films.each do |film| %>
+  <li>
+    <%= film.title %>
+  </li>
+ <% end %>
+</ul>

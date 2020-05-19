@@ -1,0 +1,16 @@
+<h1>Francis Ford Coppola's Films </h1>
+
+<h2>We have <%= @francis.count %> film(s) by Francis Ford Coppola in our database.</h2>
+
+<p> Specifically:</p>
+<ul>
+
+<% @francis.each do |film| %>
+  <li>
+    <%= film.title %>
+  </li>
+<% end %>
+
+
+
+</ul>
